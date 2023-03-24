@@ -39,11 +39,10 @@
 
 ### Pix2Pix模型
 #### 相关知识
-Pix2Pix是一种条件生成对抗网络（cGAN），它学习从输入图像到输出图像的映射。在Pix2Pix cGAN中，可以根据输入图像生成相应的输出图像。cGAN最初是在《Conditional Generative Adversarial Nets》（Mirza和Osindero，2014）中提出的
+Pix2Pix是一种条件生成对抗网络（cGAN）[注释]，它学习从输入图像到输出图像的映射。在Pix2Pix cGAN中，可以根据输入图像生成相应的输出图像。cGAN最初是在《Conditional Generative Adversarial Nets》（Mirza和Osindero，2014）中提出的
 #### 本文角色
 Pix2Pix是作为一种视觉基础模型（Visual Foundation Model）被用于Visual ChatGPT系统中的。它与其他视觉基础模型一起，通过Prompt Manager与ChatGPT进行交互，帮助ChatGPT处理复杂的视觉任务。但是，本文并未详细说明Pix2Pix在Visual ChatGPT系统中的具体应用方式。
 
-这是需要添加注释的文字[注释]
 
 ### 模型应用
   - 在这篇论文中，Visual ChatGPT 系统结合了不同的视觉基础模型，包括 BLIP 和 Stable Diffusion 等，以实现对图像的理解和生成。这些模型能够协同工作，处理复杂的视觉问题或视觉编辑指令，并提供反馈和更正结果。

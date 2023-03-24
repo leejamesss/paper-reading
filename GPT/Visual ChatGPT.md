@@ -38,7 +38,7 @@
 ### Stable Diffusion模型（类似于镜头模糊再聚焦）（文生图）
   - Stable Diffusion 是一种生成模型，它能够根据文本提示合成图像。它基于扩散过程，通过在每个时间步骤中添加噪声来逐渐模糊图像，然后再通过条件扩散过程来逐渐恢复图像。Stable Diffusion 能够生成高质量、多样性丰富的图像。
 
-### Pix2Pix模型
+### Pix2Pix模型(图生图)
 #### 相关知识
   - Pix2Pix是一种条件生成对抗网络（cGAN）[注释](#cGAN)，它学习从输入图像到输出图像的映射。在Pix2Pix cGAN中，可以根据输入图像生成相应的输出图像。cGAN最初是在《Conditional Generative Adversarial Nets》（Mirza和Osindero，2014）中提出的
 #### 本文角色

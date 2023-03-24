@@ -1,13 +1,15 @@
 # Visual ChatGPT
 
-论文链接：[https://arxiv.org/abs/2303.04671](https://arxiv.org/abs/2303.04671)
-
-题目:《Visual ChatGPT: Talking, Drawing and Editing with Visual Foundation Models》，它是由 Chenfei Wu, Shengming Yin, Weizhen Qi, Xiaodong Wang, Zecheng Tang 和 Nan Duan 六位作者撰写的。这篇论文于 2023 年 3 月 8 日提交到了 arXiv 网站上，可以在 [arXiv.org](https://arxiv.org/abs/2303.04671) 上免费获取。
-
-主要内容:是关于 Visual ChatGPT 系统的。Visual ChatGPT 是一个结合了不同视觉基础模型的系统，它能够让用户与 ChatGPT 交互，不仅可以发送和接收语言，还可以发送和接收图像。它还能够处理复杂的视觉问题或视觉编辑指令，这些指令需要多个 AI 模型的多步协作，并且能够提供反馈并要求更正结果。实验表明，Visual ChatGPT 为研究 ChatGPT 的视觉角色提供了可能性。
 
 
-Visual ChatGPT 涉及到的模型包括 ChatGPT 和一系列视觉基础模型。ChatGPT 是一个语言模型，它能够与用户进行交互，具有出色的对话能力和推理能力。视觉基础模型则是一类在计算机视觉领域表现出色的模型，它们能够理解和生成复杂的图像。例如，BLIP 模型能够理解并描述图像，而 Stable Diffusion 模型则能够根据文本提示合成图像。
+## 作者和论文链接
+- 《Visual ChatGPT: Talking, Drawing and Editing with Visual Foundation Models》，它是由 Chenfei Wu, Shengming Yin, Weizhen Qi, Xiaodong Wang, Zecheng Tang 和 Nan Duan 六位作者撰写的。这篇论文于 2023 年 3 月 8 日提交到了 arXiv 网站上，可以在 [arXiv.org](https://arxiv.org/abs/2303.04671) 上免费获取。
+
+## 主要内容 
+- 是关于 Visual ChatGPT 系统的。Visual ChatGPT 是一个结合了不同视觉基础模型的系统，它能够让用户与 ChatGPT 交互，不仅可以发送和接收语言，还可以发送和接收图像。它还能够处理复杂的视觉问题或视觉编辑指令，这些指令需要多个 AI 模型的多步协作，并且能够提供反馈并要求更正结果。实验表明，Visual ChatGPT 为研究 ChatGPT 的视觉角色提供了可能性。
+
+## 涉及模型
+- Visual ChatGPT 涉及到的模型包括 ChatGPT 和一系列视觉基础模型。ChatGPT 是一个语言模型，它能够与用户进行交互，具有出色的对话能力和推理能力。视觉基础模型则是一类在计算机视觉领域表现出色的模型，它们能够理解和生成复杂的图像。例如，BLIP 模型能够理解并描述图像，而 Stable Diffusion 模型则能够根据文本提示合成图像。
 
 
 # Visual ChatGPT

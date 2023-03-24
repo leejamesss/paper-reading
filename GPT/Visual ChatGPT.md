@@ -12,7 +12,7 @@
 - Visual ChatGPT 涉及到的模型包括 ChatGPT 和一系列视觉基础模型。ChatGPT 是一个语言模型，它能够与用户进行交互，具有出色的对话能力和推理能力。视觉基础模型则是一类在计算机视觉领域表现出色的模型，它们能够理解和生成复杂的图像。例如，BLIP 模型能够理解并描述图像，而 Stable Diffusion 模型则能够根据文本提示合成图像。
 
 
-# Visual ChatGPT
+# Visual ChatGPT简介
 
 ## 系统
 - 结合不同视觉基础模型

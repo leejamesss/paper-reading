@@ -1,4 +1,4 @@
-A Survey on Knowledge Graphs: Representation, Acquisition, and Applications
+# A Survey on Knowledge Graphs: Representation, Acquisition, and Applications
 
 这篇文章是一篇关于知识图谱的综述，介绍了知识图谱的表示、获取和应用方面的研究进展和挑战。知识图谱是一种结构化的人类知识的表示，包含了实体、关系和语义描述。知识图谱可以用于认知和人工智能领域，提高信息检索、自然语言理解、推荐系统等应用的效果。文章从四个方面对知识图谱进行了分类和分析，分别是知识图谱表示学习、知识获取、时序知识图谱和知识感知应用，并总结了一些未来的研究方向。
 

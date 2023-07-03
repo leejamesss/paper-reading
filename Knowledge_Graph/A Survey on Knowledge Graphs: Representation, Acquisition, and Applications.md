@@ -1,4 +1,4 @@
-# A Survey on Knowledge Graphs: Representation, Acquisition, and Applications
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/18ad4dca-bf2b-458d-b711-a59b02db2781)# A Survey on Knowledge Graphs: Representation, Acquisition, and Applications
 
 这篇文章是一篇关于知识图谱的综述，介绍了知识图谱的表示、获取和应用方面的研究进展和挑战。知识图谱是一种结构化的人类知识的表示，包含了实体、关系和语义描述。知识图谱可以用于认知和人工智能领域，提高信息检索、自然语言理解、推荐系统等应用的效果。文章从四个方面对知识图谱进行了分类和分析，分别是知识图谱表示学习、知识获取、时序知识图谱和知识感知应用，并总结了一些未来的研究方向。
 
@@ -41,7 +41,7 @@
 -   高斯分布：将实体和关系表示为高斯分布，可以有效地处理实体和关系的不确定性，具有概率化推理、鲁棒性强的优点，但也存在计算复杂、难以优化等缺点。例如，KG2E 、TransG 等模型都使用高斯分布。
 -   流形空间：将实体和关系表示为流形上的点，可以有效地捕捉层次结构和几何形态，具有表达能力强、适应性强的优点，但也存在计算复杂、难以优化等缺点。例如，ManifoldE 、MuRP 、Chami et al. 等模型都使用流形空间。
 
-  ![Uploading image.png…]()
+ [表征空间](https://p26.toutiaoimg.com/img/tos-cn-i-qvj2lq49k0/a88bf038ebc34e9fa4eccf996ffdfa38~tplv-tt-shrink:640:0.image)
 
 
 知识图谱评分函数是指用于衡量三元组合理性的函数，不同的评分函数有不同的计算方式和适用范围。

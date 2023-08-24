@@ -150,6 +150,12 @@ D. 把咖啡倒进了鱼缸里。
 - **常识推理**：Auto-CoT在CSQA和StrategyQA这两个常识推理数据集上，与Manual-CoT的准确率相当，分别为74.4%和65.4%。
 - **符号推理**：Auto-CoT在Last Letter Concatenation和Coin Flip这两个符号推理数据集上，也与Manual-CoT的准确率相当，分别为59.7%和99.9%。
 
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/856c3acb-355d-43b6-8fd9-e88ad78ad621)
+
+
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/9901fec4-de9b-48e4-bc33-0f91be5398b4)
+
+
 Auto-CoT在十个公开的推理任务数据集上，都能达到或超过手工设计示例的Manual-CoT的表现。这说明Auto-CoT可以利用大型语言模型（LLMs）的多步推理能力，通过自动生成示例来提示LLMs产生中间推理步骤。
 
 

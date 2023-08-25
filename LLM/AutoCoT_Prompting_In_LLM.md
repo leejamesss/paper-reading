@@ -57,6 +57,7 @@
 
 
 # 和之前读到的论文之间有哪些关系？
+
 - Language Models are Few-Shot Learners [Brown et al., 2020]：这篇论文是GPT-3模型的原始论文，它展示了GPT-3在零样本或少样本条件下，在各种自然语言处理任务上取得了令人印象深刻的结果。这篇论文也探讨了GPT-3在常识推理方面的能力和局限性。
 - LAMDA: Language Models for Dialog Applications [Thoppilan et al., 2022]：这篇论文介绍了LAMDA模型，它是一个基于GPT-3扩展而成的大型语言模型，专门用于对话应用。这篇论文展示了LAMDA模型在各种对话场景下，如问答、任务完成、闲聊等，都能表现出强大的语言理解和生成能力。
 - Scaling Language Models: Methods, Analysis & Insights from Training Gopher [Rae et al., 2021]：这篇论文介绍了Gopher模型，它是一个拥有1.6万亿参数的大型语言模型，是目前最大规模的语言模型之一。这篇论文描述了训练Gopher模型所使用的方法、分析和洞察，以及Gopher模型在各种任务上的表现。

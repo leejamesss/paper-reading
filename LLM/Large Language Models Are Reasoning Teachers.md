@@ -21,7 +21,7 @@
 对于过滤，简单地将教师模型的最终预测 ai与 ground-truth 答案 ai 进行比较，挑选预测与 gt 一致的样本
 将(Si, ri​ , ai) 重新打包成一个推理样本S’i = (pi, ci)，一个提示补全对
   
-#### Step 3. Fine-tuneFine-tune
+#### Step 3. Fine-tune
 使用广泛可访问的 OpenAI API 在组装的推理样本上对一个小型预训练的学生模型进行微调。使用与预训练期间相同的训练目标，即 autoregressive language modeling objective 或next-token prediction 
 
 ### Diverse reasoning
@@ -36,6 +36,10 @@
 
 ##### 用于对比的 baseline 模型
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/59eef6e7-885c-4865-b265-967d979dd1b0)
+
+Zero-shot-CoT： task-agnostic prompting baseline
+finetuning：使用原始训练样本进行 finetune
+Fine-tune-CoT：本文方法
 
 ##### 实验结果
 12 个数据集上的对比结果，“Random” 指的是在多项选择题的任务中，根据选项的数量随机猜测的表现，即只能以正确格式输出随机答案的模型的性能。

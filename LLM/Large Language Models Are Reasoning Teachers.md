@@ -30,6 +30,26 @@ a^i与 ground-truth 答案 ai 进行比较，挑选预测与 gt 一致的样本
 - 对于给定的样本 Si，采用随机采样策略，即大 T 的温度采样，而不是采用贪婪解码的 Zero-shot-CoT 来获得单个解释-答案对 (ei, ai)，以获得 D 个不同的样本对
 
 
+### 实验结果
+#### 实验配置
+##### 模型列表，学生模型比非常大的教师模型小25 - 500倍
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/1384834a-42a1-47ab-8fa9-fcaef9c502fe)
+
+##### 用于对比的 baseline 模型
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/59eef6e7-885c-4865-b265-967d979dd1b0)
+
+##### 实验结果
+12 个数据集上的对比结果，“Random” 指的是在多项选择题的任务中，根据选项的数量随机猜测的表现，即只能以正确格式输出随机答案的模型的性能。
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/79b66085-2e59-4f25-9c61-cfd095e27c24)
+
+- Fine-tune-CoT 性能超过 Zero-shot-CoT
+- 一些小模型效果超过了大模型：Shuffled Objects and Coin Flip
+- Fine-tune vs Fine-tune-CoT： Date Understanding and Shuffle Objects 数据上 Fine-tune-CoT 比 Fine-tune 精度明显高（Fine-tune 精度与 Random 差不多），某些数据集上 Fine-tune 精度也会比 Fine-tune-CoT 高，不过 Fine-tune-CoT 性能随着模型大小显示出更可靠的缩放曲线，并在需要多个步骤的任务中显示出明显的优势
+
+
+
+
+
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/13b98985-f2a8-4930-b9db-32847e9bcaea)
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/9a701b62-fcc7-4e24-84df-0de10d64275d)
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/37b6bdf4-a64f-42cd-95aa-f1fdeebd42da)

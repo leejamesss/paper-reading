@@ -1,4 +1,13 @@
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/ca3136fc-924e-4b4f-bdef-f0a6de2e522f)
+Fine-tune-CoT 的蒸馏步骤
+- 一个非常大的教师模型被提示通过生成多步推理解释(绿色)来解决复杂的问题(黄色)
+- 根据最终预测的正确性(红色)对生成的补全进行筛选。问题、基本原理和答案用于组成由提示和多步骤完成组成的推理示例
+- 精心策划的推理样本用于微调一个小的、轻量级的学生模型
+- 同时基于 LM 的教师模型支持了多样化的推理——为每个原始样本生成多个不同的基本原理，以丰富微调数据。这提高了学生模型的性能，并且不需要人工注释
+
+
+
+
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/13b98985-f2a8-4930-b9db-32847e9bcaea)
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/9a701b62-fcc7-4e24-84df-0de10d64275d)
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/37b6bdf4-a64f-42cd-95aa-f1fdeebd42da)

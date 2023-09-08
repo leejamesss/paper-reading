@@ -46,7 +46,6 @@
 
 - Fine-tune-CoT 性能超过 Zero-shot-CoT
 - 一些数据集上小模型效果超过了大模型：Shuffled Objects and Coin Flip
-- Fine-tune vs Fine-tune-CoT： Date Understanding and Shuffle Objects 数据上 Fine-tune-CoT 比 Fine-tune 精度明显高（Fine-tune 精度与 Random 差不多），某些数据集上 Fine-tune 精度也会比 Fine-tune-CoT 高，不过 Fine-tune-CoT 性能随着模型大小的增大表现出更加可靠的性能，并在需要多个步骤的任务中显示出明显的优势
 
 
 

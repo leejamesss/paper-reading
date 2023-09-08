@@ -10,18 +10,8 @@
 ### 实现方式
 
 #### Step 1. Reasoning generation
-首先利用一个大型教师模型为给定的任务生成CoT推理解释
-考虑一个标准样本Si，由一个问题qi和它的真实答案ai组成。使用 Zero-shot-CoT 模型，提示教师模型生成一个推理解释 r ^ i \hat{r}_i 
-r
-^
-  
-i
-​
-  来解决 qi，生成的最终答案为 a ^ i \hat{a}_i 
-a
-^
-  
-i
+- 首先利用一个大型教师模型为给定的任务生成CoT推理解释
+- 考虑一个标准样本Si，由一个问题qi和它的真实答案ai组成。使用 Zero-shot-CoT 模型，提示教师模型生成一个推理解释 ri 来解决 qi，生成的最终答案为 a ^ i \hat{a}_i 
 ​
  
 生成的文本序列，包括提示符和生成，采用以下形式： “Q: . A: Let’s think step by step. <ˆri> Therefore, the answer is <ˆai>”

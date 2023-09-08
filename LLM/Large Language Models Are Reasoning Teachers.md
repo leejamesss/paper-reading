@@ -37,9 +37,9 @@
 ##### 用于对比的 baseline 模型
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/59eef6e7-885c-4865-b265-967d979dd1b0)
 
-Zero-shot-CoT： task-agnostic prompting baseline
-finetuning：使用原始训练样本进行 finetune
-Fine-tune-CoT：本文方法
+- Zero-shot-CoT： task-agnostic prompting baseline
+- finetuning：使用原始训练样本进行 finetune
+- Fine-tune-CoT：本文方法
 
 ##### 实验结果
 12 个数据集上的对比结果，“Random” 指的是在多项选择题的任务中，根据选项的数量随机猜测的表现，即只能以正确格式输出随机答案的模型的性能。

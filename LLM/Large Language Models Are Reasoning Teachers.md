@@ -55,7 +55,6 @@
 
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/13b98985-f2a8-4930-b9db-32847e9bcaea)
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/9a701b62-fcc7-4e24-84df-0de10d64275d)
-![image](https://github.com/leejamesss/paper-reading/assets/117844938/37b6bdf4-a64f-42cd-95aa-f1fdeebd42da)
 
 
 # 文章概要

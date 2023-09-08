@@ -1,3 +1,5 @@
+代码链接：https://github.com/itsnamgyu/reasoning-teacher
+
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/ca3136fc-924e-4b4f-bdef-f0a6de2e522f)
 ## Fine-tune-CoT 的蒸馏步骤
 - 一个非常大的教师模型被提示通过生成多步推理解释(绿色)来解决复杂的问题(黄色)

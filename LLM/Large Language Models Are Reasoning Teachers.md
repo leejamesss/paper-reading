@@ -21,7 +21,7 @@
 将(Si, ri​ , ai) 重新打包成一个推理样本S’i = (pi, ci)，一个提示补全对
   
 #### Step 3. Fine-tune
-使用广泛可访问的 OpenAI API 在组装的推理样本上对一个小型预训练的学生模型进行微调。使用与预训练期间相同的训练目标，即 autoregressive language modeling objective 或next-token prediction 
+使用广泛可访问的 OpenAI API 在组装的推理样本上对一个小型预训练的学生模型进行微调。
 
 ### Diverse reasoning
 - 为了使微调- cot的样本效率最大化，为每个训练样本生成多个推理解释，从而增加微调数据

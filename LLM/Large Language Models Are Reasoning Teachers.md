@@ -14,13 +14,12 @@
 #### Step 1. Reasoning generation
 - 首先利用一个大型教师模型为给定的任务生成CoT推理解释
 - 考虑一个标准样本Si，由一个问题qi和它的真实答案ai组成。使用 Zero-shot-CoT 模型，提示教师模型生成一个推理解释 ri 来解决 qi，生成的最终答案为 ai
-- 生成的文本序列，包括提示符和生成，采用以下形式： “Q: . A: Let’s think step by step. <ˆri> Therefore, the answer is <ˆai>”
+- 生成的文本序列，包括提示符和生成，采用以下形式： “Q: A: Let’s think step by step. <ˆri> Therefore, the answer is <ˆai>”
 
 #### Step 2. Curation
 为了准备微调样本，过滤生成的样本并将它们重新格式化为提示补全对
-对于过滤，简单地将教师模型的最终预测 a ^ i \hat{a}_i 
-a^i与 ground-truth 答案 ai 进行比较，挑选预测与 gt 一致的样本
-将(Si, r ^ i \hat{r}_i r^  i​  , a ^ i \hat{a}_i a^  i) 重新打包成一个推理样本S’i = (pi, ci)，一个提示补全对
+对于过滤，简单地将教师模型的最终预测 ai与 ground-truth 答案 ai 进行比较，挑选预测与 gt 一致的样本
+将(Si, ri​ , ai) 重新打包成一个推理样本S’i = (pi, ci)，一个提示补全对
   
 #### Step 3. Fine-tuneFine-tune
 使用广泛可访问的 OpenAI API 在组装的推理样本上对一个小型预训练的学生模型进行微调。使用与预训练期间相同的训练目标，即 autoregressive language modeling objective 或next-token prediction 

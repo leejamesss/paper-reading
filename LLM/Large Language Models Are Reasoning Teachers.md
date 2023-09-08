@@ -19,25 +19,8 @@
 #### Step 2. Curation
 为了准备微调样本，过滤生成的样本并将它们重新格式化为提示补全对
 对于过滤，简单地将教师模型的最终预测 a ^ i \hat{a}_i 
-a
-^
-  
-i
-​
-  与 ground-truth 答案 ai 进行比较，挑选预测与 gt 一致的样本
-将(Si, r ^ i \hat{r}_i 
-r
-^
-  
-i
-​
-  , a ^ i \hat{a}_i 
-a
-^
-  
-i
-​
-  ) 重新打包成一个推理样本S’i = (pi, ci)，一个提示补全对
+a^i与 ground-truth 答案 ai 进行比较，挑选预测与 gt 一致的样本
+将(Si, r ^ i \hat{r}_i r^  i​  , a ^ i \hat{a}_i a^  i) 重新打包成一个推理样本S’i = (pi, ci)，一个提示补全对
   
 #### Step 3. Fine-tuneFine-tune
 使用广泛可访问的 OpenAI API 在组装的推理样本上对一个小型预训练的学生模型进行微调。使用与预训练期间相同的训练目标，即 autoregressive language modeling objective 或next-token prediction 

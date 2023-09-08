@@ -1,11 +1,60 @@
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/ca3136fc-924e-4b4f-bdef-f0a6de2e522f)
-Fine-tune-CoT 的蒸馏步骤
+## Fine-tune-CoT 的蒸馏步骤
 - 一个非常大的教师模型被提示通过生成多步推理解释(绿色)来解决复杂的问题(黄色)
 - 根据最终预测的正确性(红色)对生成的补全进行筛选。问题、基本原理和答案用于组成由提示和多步骤完成组成的推理示例
 - 精心策划的推理样本用于微调一个小的、轻量级的学生模型
 - 同时基于 LM 的教师模型支持了多样化的推理——为每个原始样本生成多个不同的基本原理，以丰富微调数据。这提高了学生模型的性能，并且不需要人工注释
 
 
+## Dataset/Algorithm/Model/Experiment Detail
+### 实现方式
+
+#### Step 1. Reasoning generation
+首先利用一个大型教师模型为给定的任务生成CoT推理解释
+考虑一个标准样本Si，由一个问题qi和它的真实答案ai组成。使用 Zero-shot-CoT 模型，提示教师模型生成一个推理解释 r ^ i \hat{r}_i 
+r
+^
+  
+i
+​
+  来解决 qi，生成的最终答案为 a ^ i \hat{a}_i 
+a
+^
+  
+i
+​
+ 
+生成的文本序列，包括提示符和生成，采用以下形式： “Q: . A: Let’s think step by step. <ˆri> Therefore, the answer is <ˆai>”
+
+#### Step 2. Curation
+为了准备微调样本，过滤生成的样本并将它们重新格式化为提示补全对
+对于过滤，简单地将教师模型的最终预测 a ^ i \hat{a}_i 
+a
+^
+  
+i
+​
+  与 ground-truth 答案 ai 进行比较，挑选预测与 gt 一致的样本
+将(Si, r ^ i \hat{r}_i 
+r
+^
+  
+i
+​
+  , a ^ i \hat{a}_i 
+a
+^
+  
+i
+​
+  ) 重新打包成一个推理样本S’i = (pi, ci)，一个提示补全对
+  
+#### Step 3. Fine-tuneFine-tune
+使用广泛可访问的 OpenAI API 在组装的推理样本上对一个小型预训练的学生模型进行微调。使用与预训练期间相同的训练目标，即 autoregressive language modeling objective 或next-token prediction 
+
+### Diverse reasoning
+- 为了使微调- cot的样本效率最大化，为每个训练样本生成多个推理解释，从而增加微调数据
+- 对于给定的样本 Si，采用随机采样策略，即大 T 的温度采样，而不是采用贪婪解码的 Zero-shot-CoT 来获得单个解释-答案对 (ei, ai)，以获得 D 个不同的样本对
 
 
 ![image](https://github.com/leejamesss/paper-reading/assets/117844938/13b98985-f2a8-4930-b9db-32847e9bcaea)

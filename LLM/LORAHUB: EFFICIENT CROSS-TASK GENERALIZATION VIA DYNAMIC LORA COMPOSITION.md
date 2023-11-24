@@ -1,3 +1,11 @@
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/7d224075-4dd7-4c90-9643-a2936f5ab8fb)
+
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/18aa73d8-acd7-484b-980b-a0a9c2cbbd2e)
+
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/0c9bbbe2-fe81-4cec-bc5e-c9241518d4d2)
+
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/35d51136-098d-4526-88a4-d74bfccad82f)
+
 
 # 1. 这篇论文的主要贡献是什么？
 

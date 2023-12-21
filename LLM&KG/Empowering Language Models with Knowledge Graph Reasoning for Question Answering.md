@@ -1,3 +1,8 @@
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/ef80ed24-94ec-48f5-8b73-056b561f0afb)
+
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/18983e71-b318-4f91-ac7c-e50c2a949eee)
+
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/15eb66a6-be85-4938-9f57-cb2d33022bde)
 
 # 1. 这篇论文的主要贡献是什么？
 - **提出了OREOLM模型**，这是一种将符号知识图推理与现有语言模型结合的新颖模型架构。与以前的工作不同，OREOLM可以无缝地插入现有的语言模型中，实现知识图与语言模型的深度交互。

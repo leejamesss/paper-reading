@@ -1,3 +1,5 @@
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/05bfc3c2-63d9-4eaa-99b4-9d87a2d6788d)
+
 
 # 1. 这篇论文的主要贡献是什么？
 这篇论文的主要贡献是提出了一种新的知识图谱补全（KGC）方法，称为CSProm-KG，它能有效地融合知识图谱的结构信息和文本信息。方法的创新点有：

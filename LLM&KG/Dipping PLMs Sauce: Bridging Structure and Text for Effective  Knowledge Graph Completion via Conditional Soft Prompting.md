@@ -1,4 +1,6 @@
-![image](https://github.com/leejamesss/paper-reading/assets/117844938/05bfc3c2-63d9-4eaa-99b4-9d87a2d6788d)
+
+![image](https://github.com/leejamesss/paper-reading/assets/117844938/ad5e449a-3d6d-4a0e-9807-2183aff1822d)
+
 
 
 # 1. 这篇论文的主要贡献是什么？
